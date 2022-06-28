@@ -1,0 +1,56 @@
+.root {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.calculadora {
+  width: 400px;
+  height: 600px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 3px black;
+}
+
+.display {
+  box-sizing: border-box;
+  font-family: "Arial Light", sans-serif;
+  color: white;
+  font-size: 3rem;
+  width: 400px;
+  height: 150px;
+  background-color: black;
+  word-wrap: break-word;
+  overflow-y: auto;
+}
+.display::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+.display::-webkit-scrollbar-track {
+  background: black;        /* color of the tracking area */
+}
+
+.display::-webkit-scrollbar-thumb {
+  background-color: rgb(23, 124, 172);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb *//* creates padding around scroll thumb */
+}
+
+.botones {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+#igual {
+  grid-column: 3 / span 2;
+  width: 200px;
+}
+
+button {
+  width: 100px;
+  height: 100px;
+  color: white;
+  background-color: rgb(23, 124, 172);
+}
