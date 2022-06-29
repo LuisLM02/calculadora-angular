@@ -4,24 +4,24 @@
       {{ operacion }}
     </div>
     <div class="botones">
-      <app-boton-numero (click)="getElement($event)" [numero]="'1'"></app-boton-numero>
-      <app-boton-numero (click)="getElement($event)" [numero]="'2'"></app-boton-numero>
-      <app-boton-numero (click)="getElement($event)" [numero]="'3'"></app-boton-numero>
-      <app-boton-numero (click)="getElement($event)" [numero]="'C'"></app-boton-numero>
+      <app-boton-numero (click)="agregarCaracter('1')" [numero]="'1'"></app-boton-numero>
+      <app-boton-numero (click)="agregarCaracter('2')" [numero]="'2'"></app-boton-numero>
+      <app-boton-numero (click)="agregarCaracter('3')" [numero]="'3'"></app-boton-numero>
+      <app-boton-numero (click)="borrarOperacion()" [numero]="'C'"></app-boton-numero>
 
-      <app-boton-numero (click)="getElement($event)" [numero]="'4'"></app-boton-numero>
-      <app-boton-numero (click)="getElement($event)" [numero]="'5'"></app-boton-numero>
-      <app-boton-numero (click)="getElement($event)" [numero]="'6'"></app-boton-numero>
-      <app-boton-numero (click)="getElement($event)" [numero]="'+'"></app-boton-numero>
+      <app-boton-numero (click)="agregarCaracter('4')" [numero]="'4'"></app-boton-numero>
+      <app-boton-numero (click)="agregarCaracter('5')" [numero]="'5'"></app-boton-numero>
+      <app-boton-numero (click)="agregarCaracter('6')" [numero]="'6'"></app-boton-numero>
+      <app-boton-numero (click)="agregarCaracter('+')" [numero]="'+'"></app-boton-numero>
 
-      <app-boton-numero (click)="getElement($event)" [numero]="'7'"></app-boton-numero>
-      <app-boton-numero (click)="getElement($event)" [numero]="'8'"></app-boton-numero>
-      <app-boton-numero (click)="getElement($event)" [numero]="'9'"></app-boton-numero>
-      <app-boton-numero (click)="getElement($event)" [numero]="'-'"></app-boton-numero>
+      <app-boton-numero (click)="agregarCaracter('7')" [numero]="'7'"></app-boton-numero>
+      <app-boton-numero (click)="agregarCaracter('8')" [numero]="'8'"></app-boton-numero>
+      <app-boton-numero (click)="agregarCaracter('9')" [numero]="'9'"></app-boton-numero>
+      <app-boton-numero (click)="agregarCaracter('-')" [numero]="'-'"></app-boton-numero>
 
-      <app-boton-numero (click)="getElement($event)" [numero]="'&larr;'"></app-boton-numero>
-      <app-boton-numero (click)="getElement($event)" [numero]="'0'"></app-boton-numero>
-      <app-boton-numero (click)="getElement($event)" [numero]="'='"></app-boton-numero>
+      <app-boton-numero (click)="borrarCaracter()" [numero]="'&larr;'"></app-boton-numero>
+      <app-boton-numero (click)="agregarCaracter('0')" [numero]="'0'"></app-boton-numero>
+      <app-boton-numero (click)="calcularResultado()" [numero]="'='"></app-boton-numero>
     </div>
   </div>
 </div>

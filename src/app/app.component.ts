@@ -6,26 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
   operacion: string = "";
 
-  getElement(event: Event): void {
-    if ((<HTMLElement>event.target).innerHTML === '=') {
-      this.operacion = eval(this.operacion).toString();
-      return;
-    }
-    if ((<HTMLElement>event.target).innerHTML === 'C') {
-      this.operacion = this.operacion = '';
-      return;
-    }
-    if ((<HTMLElement>event.target).innerHTML === '←') {
-      this.operacion = this.operacion.substring(0, this.operacion.length - 1);
-      return;
-    }
-    if (this.operacion.substr(-1) === '+' && (<HTMLElement>event.target).innerHTML === '+') return;
-    if (this.operacion.substr(-1) === '-' && (<HTMLElement>event.target).innerHTML === '-') return;
 
-
-    this.operacion += (<HTMLElement>event.target).innerHTML;
+  agregarCaracter(caracter : string): void {
+    if (this.operacion.substring(this.operacion.length - 1) === '+' && caracter === '+') return;
+    if (this.operacion.substring(this.operacion.length - 1) === '-' && caracter === '-') return;
+    this.operacion += caracter;
+  }
+  calcularResultado(){
+    this.operacion = eval(this.operacion).toString();
+  }
+  borrarOperacion(){
+    this.operacion = this.operacion = '';
+  }
+  borrarCaracter(){
+    this.operacion = this.operacion.substring(0, this.operacion.length - 1);
   }
 }
