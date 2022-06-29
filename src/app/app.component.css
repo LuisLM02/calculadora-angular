@@ -26,31 +26,19 @@
   overflow-y: auto;
 }
 .display::-webkit-scrollbar {
-  width: 12px;               /* width of the entire scrollbar */
+  width: 12px;
 }
 
 .display::-webkit-scrollbar-track {
-  background: black;        /* color of the tracking area */
+  background: black;
 }
 
 .display::-webkit-scrollbar-thumb {
-  background-color: rgb(23, 124, 172);    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb *//* creates padding around scroll thumb */
+  background-color: rgb(23, 124, 172); 
+  border-radius: 20px;
 }
 
 .botones {
   display: grid;
   grid-template-columns: auto auto auto auto;
-}
-
-#igual {
-  grid-column: 3 / span 2;
-  width: 200px;
-}
-
-button {
-  width: 100px;
-  height: 100px;
-  color: white;
-  background-color: rgb(23, 124, 172);
 }

@@ -4,24 +4,24 @@
       {{ operacion }}
     </div>
     <div class="botones">
-      <button (click)="Sumar1()">1</button>
-      <button (click)="Sumar2()">2</button>
-      <button (click)="Sumar3()">3</button>
-      <button (click)="Clear()">C</button>
+      <app-boton-numero (click)="getElement($event)" [numero]="'1'"></app-boton-numero>
+      <app-boton-numero (click)="getElement($event)" [numero]="'2'"></app-boton-numero>
+      <app-boton-numero (click)="getElement($event)" [numero]="'3'"></app-boton-numero>
+      <app-boton-numero (click)="getElement($event)" [numero]="'C'"></app-boton-numero>
 
-      <button (click)="Sumar4()">4</button>
-      <button (click)="Sumar5()">5</button>
-      <button (click)="Sumar6()">6</button>
-      <button (click)="Suma()">+</button>
+      <app-boton-numero (click)="getElement($event)" [numero]="'4'"></app-boton-numero>
+      <app-boton-numero (click)="getElement($event)" [numero]="'5'"></app-boton-numero>
+      <app-boton-numero (click)="getElement($event)" [numero]="'6'"></app-boton-numero>
+      <app-boton-numero (click)="getElement($event)" [numero]="'+'"></app-boton-numero>
 
-      <button (click)="Sumar7()">7</button>
-      <button (click)="Sumar8()">8</button>
-      <button (click)="Sumar9()">9</button>
-      <button (click)="Resta()">-</button>
+      <app-boton-numero (click)="getElement($event)" [numero]="'7'"></app-boton-numero>
+      <app-boton-numero (click)="getElement($event)" [numero]="'8'"></app-boton-numero>
+      <app-boton-numero (click)="getElement($event)" [numero]="'9'"></app-boton-numero>
+      <app-boton-numero (click)="getElement($event)" [numero]="'-'"></app-boton-numero>
 
-      <button (click)="Delete()">&larr;</button>
-      <button (click)="Sumar0()">0</button>
-      <button id="igual" (click)="SumarAll()">=</button>
+      <app-boton-numero (click)="getElement($event)" [numero]="'&larr;'"></app-boton-numero>
+      <app-boton-numero (click)="getElement($event)" [numero]="'0'"></app-boton-numero>
+      <app-boton-numero (click)="getElement($event)" [numero]="'='"></app-boton-numero>
     </div>
   </div>
 </div>
